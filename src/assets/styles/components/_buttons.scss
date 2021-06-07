@@ -1,0 +1,13 @@
+$color-dark-blue: #111b47;
+
+.btn {
+  &-blue {
+    @include button-variant($color-dark-blue, $color-dark-blue);
+    min-width: 189px;
+  }
+
+  &-outline-blue {
+    @include button-outline-variant($color-dark-blue);
+    min-width: 189px;
+  }
+}

@@ -1,0 +1,31 @@
+// more: https://sass-guidelin.es/#the-7-1-pattern
+
+// abstract (before vendor to override variables)
+@import 'abstract/variables';
+@import 'abstract/functions';
+@import 'abstract/mixins'; // not required breakpoints mixin if bootstrap added
+@import 'abstract/placeholders';
+
+// vendors (bootstrap, etc.)
+@import 'vendors/vendors';
+
+// base
+// @import 'base/reset'; not required if bootstrap added
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/base';
+@import 'base/utilities';
+
+// layout
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/sidebar';
+
+// components
+@import 'components/buttons';
+
+// pages
+@import 'pages/home';
+@import 'pages/contact';
+
+// themes
